@@ -7,7 +7,7 @@
     @requires montage/ui/component
 ###
 Montage = require("montage").Montage
-Component = require("montage/ui/component").Component;
+Component = require("montage/ui/component").Component
 
 ###*
     Description TODO
