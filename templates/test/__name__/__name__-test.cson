@@ -1,0 +1,11 @@
+"test":
+  "prototype": "test/{{name}}/{{name}}-test[Test]"
+  "properties":
+    "{{propertyName}}":
+      "@": "{{propertyName}}"
+
+"{{propertyName}}":
+  "prototype": "{{#destination}}{{destination}}{{/destination}}{{^destination}}ui{{/destination}}/{{name}}.reel"
+  "properties":
+    "element":
+      "#": "{{propertyName}}"
