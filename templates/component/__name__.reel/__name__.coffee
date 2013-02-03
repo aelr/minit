@@ -14,6 +14,6 @@ Component = require("montage/ui/component").Component
     @class module:"{{jsdocModule}}{{destination}}/{{name}}.reel".{{exportedName}}
     @extends module:montage/ui/component.Component
 ###
-exports.{{exportedName}} = Montage.create(Component, `/** @lends module:"{{jsdocModule}}{{destination}}/{{name}}.reel".{{exportedName}}# */`
+exports.{{exportedName}} = Montage.create(Component, `/** @lends module:"{{jsdocModule}}{{destination}}/{{name}}.reel".{{exportedName}}# */  {}`
 
-  {}
+  # Remove {} in line above (and this comment) once you add any properties here
