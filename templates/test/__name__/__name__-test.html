@@ -4,23 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>{{title}}</title>
     <script type="text/javascript" src="../../node_modules/montage/montage.js" data-package="../../"></script>
-    <script type="text/montage-serialization">
-        {
-            "test": {
-                "prototype": "test/{{name}}/{{name}}-test[Test]",
-                "properties": {
-                    "{{propertyName}}": {"@": "{{propertyName}}"}
-                }
-            },
-
-            "{{propertyName}}": {
-                "prototype": "{{#destination}}{{destination}}{{/destination}}{{^destination}}ui{{/destination}}/{{name}}.reel",
-                "properties": {
-                    "element": {"#": "{{propertyName}}"}
-                }
-            }
-        }
-    </script>
+    <link href="{{name}}-test.json" rel="serialization" type="text/montage-serialization">
 
 </head>
 <body>
